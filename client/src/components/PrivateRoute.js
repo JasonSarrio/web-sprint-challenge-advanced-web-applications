@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 
-// only render component with token
+// render component with token
 const PrivateRoute = ({ component: Component, ...rest }) => {
 
     const token = localStorage.getItem('token')

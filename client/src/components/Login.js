@@ -13,7 +13,7 @@ const Login = () => {
   
   const submitHandler = e => {
     e.preventDefault();
-    // make a post request to retrieve a token from the api
+    //  token from the api
     axiosWithAuth().post('/api/login', creds)
       .then(res => {
         // handled the token
